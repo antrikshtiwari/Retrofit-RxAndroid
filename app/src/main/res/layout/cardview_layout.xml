@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_layout_container"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/code"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_toRightOf="@+id/code"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/country"/>
+
+            <TextView
+                android:id="@+id/continent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_toRightOf="@+id/code"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:layout_below="@id/country"
+                android:text="@string/continent"/>
+
+            <TextView
+                android:id="@+id/capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:layout_toRightOf="@+id/code"
+                android:layout_below="@id/continent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="@string/capital"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

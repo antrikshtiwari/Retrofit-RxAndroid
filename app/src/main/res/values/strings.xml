@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Retrofit with RxAndroid</string>
+
+    <string name="country">Country</string>
+    <string name="continent">Continent</string>
+    <string name="capital">Capital</string>
+    <string name="code">In</string>
+    <string name="server_call">Tap on floating action button to make server call</string>
+
+</resources>
